@@ -41,3 +41,13 @@ Academic research tends to abstract away "unnecessary" details—such as cost an
 To bridge this gap between industry and academia, I've established a podcast called **Applied Privacy**, where I invite industry leaders and academics to discuss privacy from both engineering and academic perspectives.
 
 **Check it out here:** [Applied Privacy Podcast](https://www.youtube.com/watch?v=cZsRlcJSYgI&list=PL96YYnJMk5eaH26qgcWkBfQtcbdJc-Vl4)
+
+
+## Day 1 code:
+### Output for the centalised training:
+![output for centralised training](centralised_training_output.png)
+
+### Output for the federated training:
+![output for federated training](federated_learning_output.png)
+
+#### <b><u>Source: https://flower.ai/docs/framework/tutorial-series-get-started-with-flower-pytorch.html</b></u>
