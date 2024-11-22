@@ -9,6 +9,9 @@ from fl_setup import *
 params = get_parameters(Net())
 
 def server_fn(context: Context) -> ServerAppComponents:
+    """
+    method to return the components needed for the server
+    """
     # defining the FedAvg strategy
     strategy = FedAvg(
         fraction_fit = 0.3,
@@ -25,3 +28,17 @@ def server_fn(context: Context) -> ServerAppComponents:
 
 # similar to the ClientApp, we now create the ServerApp using the server_fn
 server = ServerApp(server_fn = server_fn)
+
+# specifying the resources for each client and run the simulation
+# if set to non, by default, each client will be allocated 2X CPU and 0X GPUs
+backend_config = {"client_resources": None}
+if DEVICE.type == "cuda":
+    backend_config = {"client_resources": {"num_gpus": 1}}
+
+# runnign the simulation
+run_simulation(
+    server_app = server,
+    client_app = client,
+    num_supernodes = NUM_PARTITIONS,
+    backend_config = backend_config,
+)
