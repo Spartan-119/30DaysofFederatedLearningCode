@@ -1,13 +1,6 @@
----
-tags: [quickstart, tabular, federated analytics]
-dataset: [Iris]
-framework: [pandas]
----
-
+![day_5_output](day_5_output.gif)
 # Federated Learning with Pandas and Flower (Quickstart Example)
 
-> \[!CAUTION\]
-> This example uses Flower's low-level API which remains a preview feature and subject to change. Both `ClientApp` and `ServerApp` operate directly on [Message](https://flower.ai/docs/framework/ref-api/flwr.common.Message.html) and [RecordSet](https://flower.ai/docs/framework/ref-api/flwr.common.RecordSet.html) objects.
 
 This introductory example to Flower uses [Pandas](https://pandas.pydata.org/), but deep knowledge of Pandas is not necessarily required to run the example. However, it will help you understand how to adapt Flower to your use case. This example uses [Flower Datasets](https://flower.ai/docs/datasets/) to
 download, partition and preprocess the [Iris dataset](https://huggingface.co/datasets/scikit-learn/iris).
@@ -15,19 +8,6 @@ Running this example in itself is quite easy.
 
 This example implements a form of Federated Analyics by which instead of training a model using locally available data, the nodes run a query on the data they own. In this example the query is to compute the histogram on specific columns of the dataset. These metrics are sent to the `ServerApp` for aggregation.
 
-## Set up the project
-
-### Clone the project
-
-Start by cloning the example project.
-
-```shell
-git clone --depth=1 https://github.com/adap/flower.git _tmp \
-		&& mv _tmp/examples/quickstart-pandas . \
-		&& rm -rf _tmp && cd quickstart-pandas
-```
-
-This will create a new directory called `quickstart-pandas` with the following structure:
 
 ```shell
 quickstart-pandas
