@@ -1,0 +1,3 @@
+[submodule "day_6/cpu_tracker_member"]
+	path = day_6/cpu_tracker_member
+	url = https://github.com/OpenMined/cpu_tracker_member
