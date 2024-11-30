@@ -1,8 +1,6 @@
 # Day 11: Set up the environment to simulate FL over multiple clients.
 
-### Leveraging Open-Source Code
-Using open-source code made it much easier to build the federated learning simulation. The transparency and collaborative nature of open-source contributions helped us understand the core ideas and adapt the simulation to our specific needs.
-
+![output](output_day_11.png)
 ---
 
 ## Step 1: Setting up the Environment
