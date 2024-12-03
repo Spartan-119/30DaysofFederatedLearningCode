@@ -2,7 +2,7 @@
 
 ## Step 5: Run the Simulation Implementing Federated Learning
 
-In this step, we initiate the Federated Learning (FL) simulation, first on the CPU, and then demonstrate GPU resource allocation. The simulation tracks the experiment's history, using Independent and Identically Distributed (IID) data. 
+In this step, I initiated the Federated Learning (FL) simulation, first on the CPU, and then demonstrate GPU resource allocation. The simulation tracks the experiment's history, using Independent and Identically Distributed (IID) data. 
 
 The core of the simulation process involves calling Flower's `fl.simulation.start_simulation` method, passing various parameters.
 
